@@ -1,0 +1,81 @@
+/* Load animation */
+@-webkit-keyframes load {
+	0% {
+		stroke-dashoffset: 0
+	}
+}
+
+@-moz-keyframes load {
+	0% {
+		stroke-dashoffset: 0
+	}
+}
+
+@keyframes load {
+	0% {
+		stroke-dashoffset: 0
+	}
+}
+
+.progress {
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+
+.progress > li {
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	font-weight: 100;
+	margin: 2rem;
+}
+
+.progress > li:after {
+	content: attr(data-percent);
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: center;
+}
+
+.progress svg:nth-child(2) {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+	fill: none;
+	stroke-width: 25;
+	stroke-dasharray: 629;
+	-webkit-animation: load 1s;
+	-moz-animation: load 1s;
+	-o-animation: load 1s;
+	animation: load 1s;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Sans-Serif;
+}
+
+table {
+	width: 100vw;
+	height: 100vh;
+	text-align: center;
+}
+
+.progress-title{
+	margin-top: 3vmin;
+}
+
+.headline {
+	font-size: 6vmin;
+	padding-top: 3vmin;
+}
