@@ -3,16 +3,11 @@
 $backgroundColor = "#FFFFFF";
 $fontColor = "#444444";
 
-$percentage = 75;
-// in vmin (useful between 0 and 100)
-$elementSize = 35;
-$progressColor = "#81c784";
-$strokeWidth = "8";
-
 $items = array(
-	array("title" => "VideoShowCase", "percentage" => "75", "size" => "35", "progressColor" => "#81c784", "strokeWidth" => "8"),
-	array("title" => "Progress", "percentage" => "33", "size" => "25", "progressColor" => "#ff0000", "strokeWidth" => "20")
-
+	array("title" => "Codera", "percentage" => "100", "size" => "35", "progressColor" => "#81c784", "strokeWidth" => "8"),
+	array("title" => "LicenseManagerWeb", "percentage" => "70", "size" => "35", "progressColor" => "#81c784", "strokeWidth" => "8"),
+	array("title" => "LicenseManagerClient", "percentage" => "40", "size" => "35", "progressColor" => "#81c784", "strokeWidth" => "8"),
+	array("title" => "VideoShowCase", "percentage" => "65", "size" => "35", "progressColor" => "#81c784", "strokeWidth" => "8")
 );
 
 function hex2rgb($hex)
@@ -36,7 +31,7 @@ function hex2rgb($hex)
 }
 
 $rgb = hex2rgb($backgroundColor);
-$progressBackgroundColor = 'rgba('.$rgb[0].', '.$rgb[1].', '.$rgb[2].', 0.9)';
+$progressBackgroundColor = 'rgba('.$rgb[0].', '.$rgb[1].', '.$rgb[2].', 0.8)';
 
 ?>
 <html>
